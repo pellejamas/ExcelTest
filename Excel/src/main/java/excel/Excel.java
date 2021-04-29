@@ -13,10 +13,9 @@ public class Excel {
 		//Create Sheet
 		Sheet sh = workbook.createSheet("Decathlon");
 		Sheet sh2 = workbook.createSheet("Heptathlon");
-		//Create Row
-		Row row = sh.createRow(0);
-		Cell cell = row.createCell(0);	
-		
+		//Create Row and Cell
+		Cell cell = sh.createRow(0).createCell(0);	
+		//Add value in a cell
 		cell.setCellValue("Name");
 		
 		try {
