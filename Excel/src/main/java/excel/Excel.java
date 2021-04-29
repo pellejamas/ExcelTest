@@ -17,6 +17,8 @@ public class Excel {
 		Cell cell = sh.createRow(0).createCell(0);	
 		//Add value in a cell
 		cell.setCellValue("Name");
+		//Write the same value of the cell into the console in java
+		System.out.println(cell.getRichStringCellValue().toString());
 		
 		try {
 			//Write the output to file
@@ -24,7 +26,7 @@ public class Excel {
 			workbook.write(output);
 			output.close();
 			workbook.close();
-			System.out.println("Completed");
+			System.out.println("Excel-file is Completed");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
