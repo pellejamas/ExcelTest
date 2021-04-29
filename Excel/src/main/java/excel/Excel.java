@@ -13,6 +13,11 @@ public class Excel {
 		//Create Sheet
 		Sheet sh = workbook.createSheet("Decathlon");
 		Sheet sh2 = workbook.createSheet("Heptathlon");
+		//Create Row
+		Row row = sh.createRow(0);
+		Cell cell = row.createCell(0);	
+		
+		cell.setCellValue("Name");
 		
 		try {
 			//Write the output to file
